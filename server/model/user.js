@@ -1,4 +1,4 @@
-const {mongoose} = require('../DBManager/db')
+const mongoose = require('mongoose')
 const validator = require('validator')
 
 var Schema = mongoose.Schema

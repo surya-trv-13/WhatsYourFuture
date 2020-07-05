@@ -5,6 +5,18 @@ const bcrypt = require('bcrypt')
 var Schema = mongoose.Schema
 
 var userSchema = new Schema({
+    name : {
+        required : true,
+        type : String,
+    },
+    dateOfBirth : {
+        required : true,
+        type : Date,
+        validate : {
+            validator : isDate,
+            message : '{VALUE} is ont validated'
+        }
+    },
     email : {
         required : true,
         type : String,

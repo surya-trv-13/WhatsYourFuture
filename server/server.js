@@ -16,5 +16,23 @@ app.use(userRouter)
 app.use(apiFetchRouter)
 
 app.listen(PORT , () => {
-    console.log(`Listening to PORT => ${PORT}`);
+    console.log(`Listening to PORT => ${PORT}`)
 })
+
+
+//Playground
+
+// const bcrypt = require('bcrypt')
+
+// const myhashedPassword = async () => {
+//     const password = 'Red12345!'
+//     const hashedPassword = await bcrypt.hash(password , 8)
+
+//     console.log(password)
+//     console.log(hashedPassword)
+
+//     const isMatch = await bcrypt.compare('girlscript' , hashedPassword)
+//     console.log(isMatch);
+// }
+
+// myhashedPassword()
